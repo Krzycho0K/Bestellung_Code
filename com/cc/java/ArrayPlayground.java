@@ -9,7 +9,11 @@ public class ArrayPlayground {
 
 		// System.out.println(numArr);
 
-		System.out.println("Alle Aray Elemente: " + numArr.length + " {" + numArr[0] + "," + numArr[1] + "," + numArr[2] + "," + numArr[3] + "," + numArr[4] + "}");
+		
+		
+
+		System.out.print("Alle Aray Elemente: " + numArr.length + " {");
+		indexArr();
 		
 		outputArr();
 
@@ -21,6 +25,8 @@ public class ArrayPlayground {
 		System.out.println("Letzte Array Element auf 101 setzen ");
 
 		outputArr();
+		
+
 		
 		System.out.println(" ");
 		System.out.println("Summe: " + numArr[0] + "+" + numArr[1] + "+" + numArr[2] + "+" + numArr[3] + "+" + numArr[4] + " = " + (numArr[0] + numArr[1] + numArr[2] + numArr[3] + numArr[4]));
@@ -37,12 +43,25 @@ public class ArrayPlayground {
 
 for (int i = 0; i < numArr.length; i++)
 		if (i < numArr.length-1) {
-	System.out.println("Element " + (i+1) + " " + numArr[i]);
+	System.out.println("Element " + (i+1) + ": " + numArr[i]);
 		} else {
-	System.out.println("Element " + (i+1) + " " + numArr[i]);
+	System.out.println("Element " + (i+1) + ": " + numArr[i]);
 		}
 
 		// System.out.println("-----------------");
 	}
 	
+
+	// System.out.println("Alle Aray Elemente: " + numArr.length + " {" + numArr[0] + "," + numArr[1] + "," + numArr[2] + "," + numArr[3] + "," + numArr[4] + "}");
+
+static void indexArr(){
+	for (int a = 0; a < numArr.length; a++)
+		if (a < numArr.length-1) {
+	System.out.print(numArr[a] + ",");
+		} else {
+	System.out.println(numArr[a] + "}");
+		}
+
+}
+
 }
